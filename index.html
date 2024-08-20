@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Gaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #212529;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .carousel-item {
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .carousel-item h5 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .news-section {
+            padding: 60px 0;
+        }
+
+        .news-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-section {
+            padding: 60px 0;
+            background-color: #343a40;
+            color: white;
+        }
+
+        .gallery-section h2 {
+            color: white;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gaming Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Noticias Destacadas -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="call-of-duty-warzone-mobile-game-h9-1920x1080.jpg" class="d-block w-100" alt="Warzone">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Warzone se Convierte en el Más Jugado del Mes</h5>
+                    <p>¡Warzone ha arrasado este mes, superando a todos los competidores en popularidad! Descubre qué hace que este juego sea el favorito de los jugadores y por qué ha capturado la atención de millones.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="fortnite-universe-kz-1920x1080.jpg" class="d-block w-100" alt="Fortnite">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fornite tendencia</h5>
+                    <p>Descripción de la noticia destacada 2.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="minecraft-dungeons-ultimate-edition-4k-wh-1920x1080.jpg" class="d-block w-100" alt="Noticia 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mojang deja mucho por hablar</h5>
+                    <p>Mojang dejo hablando a toda la comunidad con la caida del juego.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Sección de Noticias Recientes -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Noticias Recientes</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card news-card">
+                        <img src="readdead.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nueva Actualización de Red Dead Redemption 2 Añade Contenido Exclusivo</h5>
+                            <p class="card-text">Rockstar Games ha lanzado una nueva actualización para Red Dead Redemption 2 que agrega 
+                                contenido exclusivo al modo online. </p>
+                            <a href="noticia1.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card news-card">
+                        <img src="fifa.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">FIFA 24 Introduce Nuevas Características de Jugabilidad y Gráficos Mejorados</h5>
+                            <p class="card-text">EA Sports ha lanzado FIFA 24, la última entrega de su popular serie de videojuegos de fútbol. La nueva edición trae 
+                                mejoras significativas en la jugabilidad.</p>
+                            <a href="noticia2.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card news-card">
+                        <img src="mk.jpg" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Mortal Kombat 11 Añade Nuevos Personajes en su Última Expansión en 2024</h5>
+                            <p class="card-text">La última expansión de Mortal Kombat 11 ha sido lanzada, y trae consigo una serie de nuevos personajes jugables que aportan habilidades únicas y nuevos movimientos. </p>
+                            <a href="noticia3.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Galería</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="mk11.jpg" class="img-fluid rounded" alt="Imagen 1">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="call2.jpg" class="img-fluid rounded" alt="Imagen 2">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="rocket.jpg" class="img-fluid rounded" alt="Imagen 3">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="doom.jpg" class="img-fluid rounded" alt="Imagen 4">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="cratos.jpg" class="img-fluid rounded" alt="Imagen 5">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="pugb.jpg" class="img-fluid rounded" alt="Imagen 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gaming Noticias. Todos los derechos reservados por willian.</p>
+            <p>Síguenos en:</p>
+            <a href="..." style="color: #eb2207;">Instagram --</a>
+            <a href="..." style="color: #00ffff;">--facebook --</a>
+            <a href="..." style="color: #ffffff;">--Twitter</a>
+
+    </footer>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
